@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import { mkdirSync } from 'fs'
 
 const __dir = dirname(fileURLToPath(import.meta.url))
-const dataDir = join(__dir, '../../../data')
+const dataDir = join(__dir, '../../data')
 mkdirSync(dataDir, { recursive: true })
 
 const adapter = new JSONFile(join(dataDir, 'erp.json'))
